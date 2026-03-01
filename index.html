@@ -6,124 +6,132 @@
     <title>Mohamed ALAOUI | DJ & Producer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="moroccan-pattern"></div>
-    
     <nav class="navbar">
-        <a href="#" class="logo">MA</a>
+        <div class="nav-logo">MA</div>
         <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#mixes">Mixes</a></li>
             <li><a href="#events">Events</a></li>
-            <li><a href="#contact" class="btn-nav">Book Now</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="menu-toggle" aria-label="Menu">
+        <button class="nav-toggle" aria-label="Menu">
             <span></span><span></span><span></span>
         </button>
     </nav>
 
-    <header class="hero">
+    <section id="home" class="hero">
+        <div class="moroccan-pattern"></div>
         <div class="hero-content">
-            <div class="zellige-frame">
-                <span class="subtitle">DJ & Producer</span>
-                <h1>Mohamed<br><span class="gold">ALAOUI</span></h1>
-                <p class="tagline">Where Moroccan Soul Meets Electronic Beats</p>
-                <a href="#mixes" class="btn-primary">Listen Now</a>
-            </div>
+            <p class="hero-subtitle">DJ & Producer</p>
+            <h1 class="hero-title">Mohamed<br><span>ALAOUI</span></h1>
+            <p class="hero-tagline">Where Moroccan Soul Meets Electronic Beats</p>
+            <a href="#mixes" class="btn btn-primary">Listen Now</a>
         </div>
         <div class="hero-visual">
-            <div class="vinyl-container">
-                <div class="vinyl"></div>
+            <div class="vinyl-disc">
+                <div class="vinyl-label">MA</div>
             </div>
         </div>
-    </header>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
 
     <section id="about" class="about">
         <div class="container">
             <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1461784180009-21121b2f204c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="DJ Mohamed ALAOUI">
-                <div class="image-frame"></div>
+                <img src="https://images.unsplash.com/photo-1571266028243-e4733b0f0bb0?w=600&auto=format&fit=crop" alt="DJ Mohamed ALAOUI">
+                <div class="about-decoration"></div>
             </div>
             <div class="about-content">
-                <h2>The <span class="gold">Story</span></h2>
-                <p>Born in Casablanca, raised on the hypnotic rhythms of Gnawa music and the pulsing beats of electronic dance music. Mohamed ALAOUI bridges two worlds — the ancient mystical sounds of Morocco and the cutting-edge energy of modern house and techno.</p>
-                <p>From the rooftops of Marrakech to the clubs of Ibiza, Mohamed brings a unique sonic journey that transports audiences across continents and centuries.</p>
+                <h2 class="section-title">The Artist</h2>
+                <p>Born in Casablanca, raised on the hypnotic rhythms of Gnawa music and the pulsating beats of electronic dance music. Mohamed ALAOUI crafts a unique sonic experience that bridges continents and generations.</p>
+                <p>With over 10 years behind the decks, performances at major festivals across Morocco, Europe, and beyond, Mohamed brings an unmistakable energy that transforms every venue into a journey through sound.</p>
                 <div class="stats">
-                    <div class="stat"><span class="stat-num">150+</span><span class="stat-label">Shows</span></div>
-                    <div class="stat"><span class="stat-num">50K</span><span class="stat-label">Followers</span></div>
-                    <div class="stat"><span class="stat-num">12</span><span class="stat-label">Countries</span></div>
+                    <div class="stat"><span class="stat-number">150+</span><span class="stat-label">Shows</span></div>
+                    <div class="stat"><span class="stat-number">50K+</span><span class="stat-label">Followers</span></div>
+                    <div class="stat"><span class="stat-number">10</span><span class="stat-label">Years</span></div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="mixes" class="mixes">
-        <h2>Latest <span class="gold">Mixes</span></h2>
-        <div class="mixes-grid">
-            <article class="mix-card">
-                <div class="mix-cover"><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&auto=format&fit=crop" alt="Desert Nights Mix"><div class="play-btn">▶</div></div>
-                <h3>Desert Nights Vol. 3</h3>
-                <p>Deep House • 1:24:00</p>
-            </article>
-            <article class="mix-card">
-                <div class="mix-cover"><img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&auto=format&fit=crop" alt="Medina Dreams Mix"><div class="play-btn">▶</div></div>
-                <h3>Medina Dreams</h3>
-                <p>Afro House • 1:45:00</p>
-            </article>
-            <article class="mix-card">
-                <div class="mix-cover"><img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&auto=format&fit=crop" alt="Atlas Frequencies Mix"><div class="play-btn">▶</div></div>
-                <h3>Atlas Frequencies</h3>
-                <p>Melodic Techno • 2:00:00</p>
-            </article>
+        <div class="container">
+            <h2 class="section-title center">Latest Mixes</h2>
+            <div class="mixes-grid">
+                <article class="mix-card">
+                    <div class="mix-artwork"><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&auto=format&fit=crop" alt="Desert Nights Mix"><div class="mix-play">▶</div></div>
+                    <h3>Desert Nights Vol. 3</h3>
+                    <p>Deep House • 1:24:00</p>
+                </article>
+                <article class="mix-card">
+                    <div class="mix-artwork"><img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&auto=format&fit=crop" alt="Medina Grooves"><div class="mix-play">▶</div></div>
+                    <h3>Medina Grooves</h3>
+                    <p>Afro House • 1:45:00</p>
+                </article>
+                <article class="mix-card">
+                    <div class="mix-artwork"><img src="https://images.unsplash.com/photo-1571935441700-a6df9a8d6266?w=400&auto=format&fit=crop" alt="Atlantic Sessions"><div class="mix-play">▶</div></div>
+                    <h3>Atlantic Sessions</h3>
+                    <p>Melodic Techno • 2:00:00</p>
+                </article>
+            </div>
         </div>
     </section>
 
     <section id="events" class="events">
-        <h2>Upcoming <span class="gold">Events</span></h2>
-        <div class="events-list">
-            <article class="event-card">
-                <div class="event-date"><span class="day">28</span><span class="month">JUN</span></div>
-                <div class="event-info"><h3>Oasis Festival</h3><p>Marrakech, Morocco</p></div>
-                <a href="#contact" class="btn-secondary">Get Tickets</a>
-            </article>
-            <article class="event-card">
-                <div class="event-date"><span class="day">15</span><span class="month">JUL</span></div>
-                <div class="event-info"><h3>Pacha Ibiza</h3><p>Ibiza, Spain</p></div>
-                <a href="#contact" class="btn-secondary">Get Tickets</a>
-            </article>
-            <article class="event-card">
-                <div class="event-date"><span class="day">02</span><span class="month">AUG</span></div>
-                <div class="event-info"><h3>Mawazine Festival</h3><p>Rabat, Morocco</p></div>
-                <a href="#contact" class="btn-secondary">Get Tickets</a>
-            </article>
+        <div class="container">
+            <h2 class="section-title center">Upcoming Events</h2>
+            <div class="events-list">
+                <article class="event-card">
+                    <div class="event-date"><span class="day">24</span><span class="month">JAN</span></div>
+                    <div class="event-info"><h3>Oasis Festival</h3><p>Marrakech, Morocco</p></div>
+                    <a href="#contact" class="btn btn-outline">Get Tickets</a>
+                </article>
+                <article class="event-card">
+                    <div class="event-date"><span class="day">08</span><span class="month">FEB</span></div>
+                    <div class="event-info"><h3>Club Warehouse</h3><p>Paris, France</p></div>
+                    <a href="#contact" class="btn btn-outline">Get Tickets</a>
+                </article>
+                <article class="event-card">
+                    <div class="event-date"><span class="day">15</span><span class="month">MAR</span></div>
+                    <div class="event-info"><h3>Sonar Off</h3><p>Barcelona, Spain</p></div>
+                    <a href="#contact" class="btn btn-outline">Get Tickets</a>
+                </article>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Book <span class="gold">Mohamed</span></h2>
-            <p class="contact-intro">Ready to bring the Moroccan heat to your event?</p>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="text" placeholder="Event Type">
-                <textarea placeholder="Tell me about your event..." rows="4"></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
+            <h2 class="section-title center">Get In Touch</h2>
+            <p class="contact-intro">For bookings, collaborations, or just to say salam!</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
             <div class="social-links">
-                <a href="#" aria-label="SoundCloud">☁</a>
-                <a href="#" aria-label="Instagram">◷</a>
-                <a href="#" aria-label="Spotify">●</a>
-                <a href="#" aria-label="YouTube">▶</a>
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="SoundCloud">SC</a>
+                <a href="#" aria-label="Spotify">SP</a>
+                <a href="#" aria-label="YouTube">YT</a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-pattern"></div>
-        <p>© 2024 Mohamed ALAOUI. Crafted with love from Morocco 🇲🇦</p>
+    <footer class="footer">
+        <div class="moroccan-border"></div>
+        <p>© 2025 Mohamed ALAOUI. All rights reserved.</p>
     </footer>
 
     <script src="app.js"></script>

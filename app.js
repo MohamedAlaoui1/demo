@@ -1,30 +1,35 @@
-// Navbar scroll effect
-const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-    navbar.style.background = window.scrollY > 50 
-        ? 'rgba(10, 10, 10, 0.95)' 
-        : 'linear-gradient(to bottom, #0A0A0A, transparent)';
-});
-
-// Mobile menu toggle
-const menuToggle = document.querySelector('.menu-toggle');
+// Mobile Navigation Toggle
+const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-menuToggle.addEventListener('click', () => {
-    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-    navLinks.style.flexDirection = 'column';
-    navLinks.style.position = 'absolute';
-    navLinks.style.top = '100%';
-    navLinks.style.left = '0';
-    navLinks.style.right = '0';
-    navLinks.style.background = 'rgba(10, 10, 10, 0.98)';
-    navLinks.style.padding = '24px';
-    navLinks.style.gap = '24px';
+navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
 
-// Smooth reveal on scroll
-const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+// Close mobile nav on link click
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('active'));
+});
 
+// Smooth scroll for navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+});
+
+// Navbar background on scroll
+const navbar = document.querySelector('.navbar');
+window.addEventListener('scroll', () => {
+    navbar.style.background = window.scrollY > 100 
+        ? 'rgba(10, 10, 12, 0.95)' 
+        : 'linear-gradient(to bottom, var(--bg-dark), transparent)';
+});
+
+// Intersection Observer for animations
+const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -34,29 +39,29 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('section').forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(30px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(section);
+document.querySelectorAll('.mix-card, .event-card, .about-content, .about-image').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
 });
 
-// Vinyl pause on hover
-const vinyl = document.querySelector('.vinyl');
-vinyl?.addEventListener('mouseenter', () => vinyl.style.animationPlayState = 'paused');
-vinyl?.addEventListener('mouseleave', () => vinyl.style.animationPlayState = 'running');
-
-// Form submission
-const form = document.querySelector('.contact-form');
-form?.addEventListener('submit', (e) => {
+// Contact form handling
+document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Thank you! Mohamed will get back to you soon. 🎧');
-    form.reset();
+    const btn = this.querySelector('button');
+    btn.textContent = 'Message Sent!';
+    btn.style.background = '#22c55e';
+    setTimeout(() => {
+        btn.textContent = 'Send Message';
+        btn.style.background = '';
+        this.reset();
+    }, 3000);
 });
 
-// Play button interaction
-document.querySelectorAll('.play-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
+// Mix card play interaction
+document.querySelectorAll('.mix-play').forEach(play => {
+    play.addEventListener('click', () => {
         alert('🎵 Mix player coming soon! Follow on SoundCloud for now.');
     });
 });

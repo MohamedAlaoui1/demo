@@ -1,28 +1,28 @@
 # Mohamed ALAOUI - DJ Portfolio
 
-A creative, Moroccan-inspired portfolio website for DJ & Producer Mohamed ALAOUI.
+A creative, modern portfolio website for DJ & Producer Mohamed ALAOUI, featuring Moroccan-inspired design elements.
 
 ## 🎧 Features
-- Moroccan geometric patterns and gold accents
-- Animated spinning vinyl record
-- Responsive mobile-first design
-- Smooth scroll animations
+- Dark, moody aesthetic with gold Moroccan accents
+- Animated vinyl disc in hero section
+- Moroccan geometric pattern overlays
 - Mix showcase with hover effects
-- Event listings
-- Contact/booking form
+- Upcoming events section
+- Contact form
+- Fully responsive design
 
 ## 📁 Structure
 ```
-├── index.html      # Main HTML
-├── style.css       # Moroccan-themed styles
+├── index.html      # Main HTML structure
+├── style.css       # Styles with CSS custom properties
 ├── app.js          # Interactions & animations
-└── README.md       # Documentation
+└── .agent-meta.json # Project metadata
 ```
 
 ## 🎨 Design
-- **Colors**: Gold (#D4A853), Deep Purple, Dark backgrounds
-- **Fonts**: Playfair Display (headings), Poppins (body)
-- **Style**: Modern DJ aesthetic with traditional Moroccan touches
+- Colors: Deep black, Gold (#d4a853), Purple accents
+- Fonts: Bebas Neue (display), Inter (body)
+- Moroccan geometric patterns as subtle backgrounds
 
-## 🌐 Live
+## 🌐 Live Site
 https://MohamedAlaoui1.github.io/demo
