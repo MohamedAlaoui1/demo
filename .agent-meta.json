@@ -1,0 +1,17 @@
+{
+  "project_type": "portfolio",
+  "style": "moroccan-modern",
+  "pages": ["index.html"],
+  "color_palette": ["#D4A853", "#2D1B4E", "#C45C26", "#0A0A0A", "#F5F0E8"],
+  "fonts": ["Playfair Display", "Poppins"],
+  "features": [
+    "animated vinyl record",
+    "moroccan geometric patterns",
+    "scroll animations",
+    "responsive design",
+    "mix showcase",
+    "event listings",
+    "contact form"
+  ],
+  "last_updated": "2025-01-09"
+}
